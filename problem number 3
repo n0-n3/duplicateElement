@@ -1,0 +1,49 @@
+// Online C++ compiler to run C++ program online
+
+#include <iomanip>
+#include <iostream>
+int main() {
+using namespace std;
+
+  float  hmale,hfemale,pmale,pfemale,rmale,rfemale;
+  float  sumHired,sumPermanent,sumResigned;
+  float   perHiredMale,perHiredFemale,perPermaMale,perPermaFemale,perReMale,perReFemale;
+  cout << "Enter the number of newly hired males:: ";
+  cin >> hmale;
+  cout << "Enter the number of newly hired females:: ";
+  cin >> hfemale;
+  sumHired = hmale + hfemale;
+  perHiredMale = (hmale / sumHired) * 100;
+  perHiredFemale = (hfemale / sumHired) * 100;
+   cout << "Enter the number of permanent position males:: ";
+  cin >> pmale;
+  cout << "Enter the number of permanent position females:: ";
+  cin >> pfemale;
+  sumPermanent = pmale + pfemale;
+  perPermaMale = (pmale / sumPermanent) * 100;
+  perPermaFemale = (pfemale / sumPermanent) * 100;
+   cout << "Enter the number of resigned males:: ";
+  cin >> rmale;
+  cout << "Enter the number of resigned females:: ";
+  cin >> rfemale;
+  sumResigned = rmale + rfemale;
+  perReMale = (rmale / sumResigned) * 100;
+  perReFemale = (rfemale / sumResigned) * 100;
+  
+  
+  cout << "  \n\n" ;
+  cout << "===\n" ;
+  cout << "Thank you for the Information \n";
+  cout << "===\n" ;
+  
+  cout << fixed << setprecision(0) << "Number of hired employee = " << sumHired << "\n" ;
+  cout << fixed << setprecision(2) << "Male = " << perHiredMale << "%\n" ;
+  cout << fixed << setprecision(2) << "Female = " << perHiredFemale << "%\n\n" ;
+   cout << fixed << setprecision(0) << "Number of Permanent employee = " << sumPermanent << "\n" ;
+  cout << fixed << setprecision(2) << "Male = " << perPermaMale << "%\n" ;
+  cout << fixed << setprecision(2) << "Female = " << perPermaFemale << "%\n\n" ;
+   cout << fixed << setprecision(0) << "Number of Resigned employee = " << sumResigned << "\n" ;
+  cout << fixed << setprecision(2) << "Male = " << perReMale << "%\n" ;
+  cout << fixed << setprecision(2) << "Female = " << perReFemale << "%\n\n" ;
+  return 0;
+}
